@@ -1,8 +1,8 @@
 
 
-# Emacsチュートリアル
+# Emacsのチュートリアルをプレイ。
 
-[小説] Emacsのhelp-with-tutorialをプレイ。  
+`M-x help-with-tutorial`  
 
 <https://jamcha-aa.github.io/Emacs-tutorial/>  
 
@@ -18,7 +18,7 @@
 
 <br>  
 <br>  
-Copyright (c) 2016-2018 jamcha (jamcha.aa@gmail.com).  
+Copyright (c) 2018 jamcha (jamcha.aa@gmail.com).  
 
 All the novels in this repository are licensed under the [GNU General Public License 3](https://www.gnu.org/licenses/gpl.html).  
 
