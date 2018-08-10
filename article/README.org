@@ -19,7 +19,7 @@
 
   <br>
   <br>
-  Copyright (c) 2018 jamcha (jamcha.aa@gmail.com).
+  Copyright (c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.
 
   All the novels in this repository are licensed under the [[https://www.gnu.org/licenses/gpl.html][GNU General Public License 3]].
 
