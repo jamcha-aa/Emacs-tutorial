@@ -1,0 +1,136 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: \n:t
+
+* 03 - 偽装テキスト
+
+  「チュートリアルの起動方法は覚えてるな？」EeePCが聞く。「F1 tでしょ」「そうだ」
+
+  日本語のチュートリアルを起動すると，2行目にいきなり英語が表れる。
+
+  #+BEGIN_QUOTE
+   NOTICE: The main purpose of the Emacs tutorial is to teach you
+   the most important standard Emacs commands (key bindings).
+   However, your Emacs has been customized by changing some of
+   these basic editing commands, so it doesn't correspond to the
+   tutorial.  We have inserted colored notices where the altered
+   commands have been introduced. [More]
+  #+END_QUOTE
+
+  「同じ機能でもショートカットの種類がいくつかあるよ，って書いてある」「混乱しないのか？」「使えるやつ一種類覚えておけばいいと思う」「ふむ」
+
+  #+BEGIN_QUOTE
+  Emacs のコマンドを入力するには、一般にコントロールキー（キートップに
+  CONTROL とか CTRL とか CTL と書いてある）やメタキー（キートップに META
+  とか ALT とか EDIT と書いてある）を使います。そこで、CONTROL とか META
+  とかを書く代わりに、次のような記法を使うことにします。
+
+  C-<文字>   コントロールキーを押したまま、<文字>キーを押します。例えば、
+	    C-f はコントロールキーを押しながら f のキーを押すことです。
+  M-<文字>   メタキーを押したまま、<文字>キーを押します。もしメタキーがな
+	    い場合は、エスケープキーを押してから離し、それから<文字>キー
+	    を押します。以降エスケープキーのことを <ESC> と書きます。
+  #+END_QUOTE
+
+  「恥ずかしながらメタキーはずっとEscキーを使っておりました」「本当に恥ずかしいな。不便じゃないのか？」「変換キーに割り当ててたから…」「割り当てる」「変換キーをEscキーにして使ってたってこと」「ふむ」
+
+  *C-f はコントロールキーを押しながら f のキーを押すことです。*
+
+  「みんなコントロールキーどうやって押してるんだろうねえ」「君はどうしてるんだ」「今は無変換キーに割り当ててます」「さっきのEscキーみたいにか」「そうそう」「そういうソフトがあるのか」「昔はxmodmap使ってたんだけど，今は[[https://wiki.archlinux.jp/index.php/X_KeyBoard_extension][xkb]]がいいみたい。WindowsはChgKeyとかyamyとか」
+
+  <br>
+  「それじゃあM-xも学んだことだし少し応用してみる？」「うむ」
+
+  #+BEGIN_SRC 
+  M-x help-with-tutorial-spec-language
+  #+END_SRC
+
+  「M-xのあとは自動的に空白ができるから文字だけ入れればいいよ」「C-fに比べると随分長いな」「コマンドの正式名称みたいなもんだね。地図アプリで住所から探す感じ」
+
+  #+BEGIN_QUOTE
+  English
+  Thai
+  Korean
+  Japanese
+  Hebrew
+  Romanian
+  Slovak
+  Czech
+  Brazilian Portuguese
+  Swedish
+  Polish
+  Spanish
+  Slovenian
+  Italian
+  French
+  German
+  Dutch
+  Esperanto
+  ASCII
+  Russian
+  Chinese-GB18030
+  Chinese-GBK
+  Chinese-BIG5
+  Chinese-GB
+  #+END_QUOTE
+
+  「チュートリアルの各言語版一覧です」「エスペラント版まであるのか」「すごいよね」「中国語が四種類あるが」「台湾は繁体字だからBIG5で簡体字はGBで始まるやつ。たしかGB18030が一番新しい規格だったと思う」「詳しいな」「調べたから」
+
+  #+BEGIN_QUOTE
+  ！重要！: Emacsを終了するには、C-x C-c をタイプします。
+  #+END_QUOTE
+
+  「日本語版だとこれだけなんだけど，英語版だとこれ以降もなんか書いてある」
+
+  #+BEGIN_QUOTE
+  To quit a partially entered command, type C-g.
+  To stop the tutorial, type C-x k, then &lt;Return&gt; at the prompt.
+  #+END_QUOTE
+
+  「コマンドの入力をやめるときは C-g をタイプします。チュートリアルを中断するには C-x k をタイプし，リターンを押します」「リターンとは」「キーボード右にある折れ曲がった矢印がついてたりするでかいキーのことです。Enterと書いてある場合もあります」
+
+  #+BEGIN_QUOTE
+  ">>" で始まる行は、その時何をすべきかを指示しています。例えば、
+
+  <br>
+  <br>
+  [このページの途中の空白行はわざと入れてあります。ガイドは下に続きます。]
+
+
+
+  <br>
+  <br>
+  &gt;&gt;  では C-v （次の画面を見る）をタイプして次の画面に進んで下さい。
+  &nbsp;&nbsp;（さあ、やってみましょう。コントロールキーを押しながら v です）
+  &nbsp;&nbsp;以降、一画面を読み終えるたびに同様にして次の画面に読み進んで下さい。
+  #+END_QUOTE
+
+  「これ最初見たときびっくりしたんだけど」「何だ」「空白行の長さがウインドウの高さで変わるの」
+
+  注: この小説では変わりません
+
+  「ほう」「これテキストファイルに見せかけたプログラムなんだよね。怖い」「怖い？何が」「読んでる途中で」
+
+  <br>
+  <span style="font-size: 200%;">怖い画像</span>
+
+  <br>
+   「とか」「それは嫌だな」
+
+   #+BEGIN_QUOTE
+   前の画面と次の画面とでは、表示される内容に何行かの重なりがあります。こ
+   れは、表示されている内容が連続していることがすぐ判るようにするためです。
+
+   まずは、ファイルの中を移動して行く方法を知る必要があります。C-v によっ
+   て次の画面に進むことはもう判りました。前の画面に戻るには、M-v （メタキー
+   を押しながら v、もしくは <ESC> を押して離して v）です。
+
+   &gt;&gt; 何度か M-v と C-v を試して下さい。
+   #+END_QUOTE
+
+   「C-vはしょっちゅう使うけどM-vはほとんど使わない」「なぜだ」「Escをメタキーにしてたせいでいちいち画面戻すのに二個のキー順番に押すのが面倒だったから」「…Altがメタキーなのを知っていたら良かったな」「うん」「これから使うようになるか？」「頭の回路が変わるくらい使えばいずれは」「早くそうなるといいな」「うん」
+
+  <br>
+  <br>
+  (c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.
+
+  ![[https://www.gnu.org/graphics/gplv3-88x31.png][GPL3]]
