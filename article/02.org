@@ -1,0 +1,64 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: \n:t
+
+* 02 - 監獄からの脱出
+
+  「夢の中でさあ，」体調を取り戻した私がチュートリアルの下読みをしながら言う。「町田康先生が『ふりがなが無くても読めるようにしろ』って言ってたんだよ」
+
+  それを聞いたEeePCが問う。「夢の中でか？」「うん」「夢の中でか」「そう」「夢の中でか…」「なに？なんなの？」あまりにくだらないのでEeePCがあきれている。「それで，夢の中の町田康先生はどうしてそう言ってたんだ？」「わかんないよ，夢だもん」「…だろうな」「わかりやすい文章を常に心がけろってことかな？」「知るか」
+
+  <br>
+  私が準備をしていると，「ところで君はいきなりEmacsのチュートリアルから始めるのか？」とEeePCが口をはさんだ。「どういうこと？」「チュートリアルというからには，Emacsのインストール方法くらい説明するべきだと思うが」
+
+  「インストールか…」私は顔を上げ，遠くを見る。EeePCが何度か呼びかけるが，まるで聞いていない。「…」
+
+  #+BEGIN_QUOTE
+  Emacs のコマンドを入力するには、一般にコ
+  #+END_QUOTE
+
+  「おい，話を聞け」EeePCはあわてて止める。「インストール方法を紹介しろと言っているんだ」
+
+  私は口を台形にし，嫌悪の感情を込めた目でEeePCを見る。「なんだその目は」「…」「嫌がってもだめだぞ」「…」「雰囲気だけでも入門らしく，それが礼儀だ。わかるな？」「…」
+
+  しぶしぶ私はEeePCに従った。
+
+** 1. たくさん失敗する
+
+   私はEmacsのscratchバッファで次の文字を入力した。
+
+   #+BEGIN_SRC 
+   (1 1 +)
+   #+END_SRC
+
+   C-j で評価すると，即座にエラーが表示される。
+
+   #+BEGIN_SRC 
+   Debugger entered--Lisp error: (invalid-function 1)
+   (1 1 +)
+   eval((1 1 +) nil)
+   elisp--eval-last-sexp(t)
+   eval-last-sexp(t)
+   eval-print-last-sexp(nil)
+   funcall-interactively(eval-print-last-sexp nil)
+   call-interactively(eval-print-last-sexp nil nil)
+   command-execute(eval-print-last-sexp)
+   #+END_SRC
+
+   「なんだこれは」EeePCがたずねる。「エラーが出てる」「それぐらい見ればわかる。どうしてそんなことを？」
+
+   私はewwで検索をしながら続ける。「コンピュータが出すエラーをこわがる人が結構いるから」「それと入門に何の関係があるのかわからんのだが」「エラーが出るのが普通，ってくらいに気楽に思っていてほしいんだ」「ふむ」「そうしないとインストールだけで力つきると思う」
+
+   私は再びscratchバッファに入力する。
+
+   #+BEGIN_SRC 
+   (+ 1 1)
+   2
+   #+END_SRC
+
+   「エラーが出ないな」「計算の順番変えたからね」「順番？」「Emacsについてる電卓 (~M-x calc~) とEmacsのプログラムは符号の場所が違うんだ。だからさっきは電卓のつもりで入力してエラーが出た」「ふむ」「失敗しても平気なのがコンピュータで遊ぶ良いところだと思います」「[[https://www.google.com/about/appsecurity/play-rewards/][失敗を見つけると賞金をくれる会社]]もあるくらいだしな」「そうそう。どんどん失敗しよう」
+
+  <br>
+  <br>
+  (c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.
+
+  ![[https://www.gnu.org/graphics/gplv3-88x31.png][GPL3]]
