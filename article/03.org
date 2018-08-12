@@ -7,34 +7,35 @@
 
   日本語のチュートリアルを起動すると，2行目にいきなり英語が表れる。
 
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
    NOTICE: The main purpose of the Emacs tutorial is to teach you
    the most important standard Emacs commands (key bindings).
    However, your Emacs has been customized by changing some of
    these basic editing commands, so it doesn't correspond to the
    tutorial.  We have inserted colored notices where the altered
    commands have been introduced. [More]
-  #+END_QUOTE
+  #+END_SRC
 
   「同じ機能でもショートカットの種類がいくつかあるよ，って書いてある」「混乱しないのか？」「使えるやつ一種類覚えておけばいいと思う」「ふむ」
 
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   Emacs のコマンドを入力するには、一般にコントロールキー（キートップに
   CONTROL とか CTRL とか CTL と書いてある）やメタキー（キートップに META
   とか ALT とか EDIT と書いてある）を使います。そこで、CONTROL とか META
   とかを書く代わりに、次のような記法を使うことにします。
-  #+END_QUOTE
+  #+END_SRC
 
   「さらっと書いてあるけどEmacsはコントロールキーとメタキーをスマホの親指くらい使います」「全部じゃないか」「ほんとにそれくらい使います」
 
   <br>
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   C-<文字>   コントロールキーを押したまま、<文字>キーを押します。例えば、
 	    C-f はコントロールキーを押しながら f のキーを押すことです。
   M-<文字>   メタキーを押したまま、<文字>キーを押します。もしメタキーがな
 	    い場合は、エスケープキーを押してから離し、それから<文字>キー
-	    を押します。以降エスケープキーのことを &lt;ESC&gt; と書きます。
-  #+END_QUOTE
+	    を押します。以降エスケープキーのことを <ESC> と書きます。
+  #+END_SRC
+
 
   「恥ずかしながらメタキーはずっとEscキーを使っておりました」「本当に恥ずかしいな。不便じゃないのか？」「変換キーに割り当ててたから…」「割り当てる」「変換キーをEscキーにして使ってたってこと」「ふむ」
 
@@ -80,37 +81,43 @@
 
   「チュートリアルの各言語版一覧です」「エスペラント版まであるのか」「すごいよね」「中国語が四種類あるが」「台湾は繁体字だからBIG5で簡体字はGBで始まるやつ。たしかGB18030が一番新しい規格だったと思う」「詳しいな」「調べたから」
 
-  #+BEGIN_QUOTE
+  <br>
+  #+BEGIN_SRC 
   ！重要！: Emacsを終了するには、C-x C-c をタイプします。
-  #+END_QUOTE
+  #+END_SRC
 
   「日本語版だとこれだけなんだけど，英語版だとこれ以降もなんか書いてある」
 
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   To quit a partially entered command, type C-g.
   To stop the tutorial, type C-x k, then &lt;Return&gt; at the prompt.
-  #+END_QUOTE
+  #+END_SRC
 
+  #+BEGIN_QUOTE
   「コマンドの入力をやめるときは C-g をタイプします。チュートリアルを中断するには C-x k をタイプし，リターンを押します」
+  #+END_QUOTE
 
   「リターンとは」「キーボード右にある折れ曲がった矢印がついてたりするでかいキーのことです。Enterと書いてある場合もあります」「ッターン!…で憎まれているキーだな」「そう」「君はほとんど押さないようだが」「EmacsだとC-mを使います」「むしろ不便じゃないか？」「うーん，ごはん食べるときくらいかなあ」「日本語入力でも使うだろう」「SKKはリターンのかわりにC-jを使うんだよ」「どうしてそこまで排除しようとするんだ」「リターン禁止ってなんかかっこいいじゃん」「…君は前からそういうやつだったな」
 
   <br>
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   ">>" で始まる行は、その時何をすべきかを指示しています。例えば、
 
-  <br>
-  <br>
+
+
+
   [このページの途中の空白行はわざと入れてあります。ガイドは下に続きます。]
 
 
 
-  <br>
-  <br>
-  &gt;&gt;  では C-v （次の画面を見る）をタイプして次の画面に進んで下さい。
-  &nbsp;&nbsp;（さあ、やってみましょう。コントロールキーを押しながら v です）
-  &nbsp;&nbsp;以降、一画面を読み終えるたびに同様にして次の画面に読み進んで下さい。
-  #+END_QUOTE
+
+  >>  では C-v （次の画面を見る）をタイプして次の画面に進んで下さい。
+	（さあ、やってみましょう。コントロールキーを押しながら v です）
+	以降、一画面を読み終えるたびに同様にして次の画面に読み進んで下さい。
+
+  前の画面と次の画面とでは、表示される内容に何行かの重なりがあります。こ
+  れは、表示されている内容が連続していることがすぐ判るようにするためです。
+  #+END_SRC
 
   「これ最初見たときびっくりしたんだけど」「何だ」「チュートリアル起動したとき，空白行の長さがウインドウの高さで変わるの」
 
@@ -127,38 +134,36 @@
   注: Emacsのチュートリアルは画面にあわせ調整されたテキストファイルです。安心してご覧ください。
 
   <br>
-  #+BEGIN_QUOTE
-  前の画面と次の画面とでは、表示される内容に何行かの重なりがあります。こ
-  れは、表示されている内容が連続していることがすぐ判るようにするためです。
-  #+END_QUOTE
-
-  <br>
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   This is a copy of the Emacs tutorial text, customized slightly for
   you.  Later on we will instruct you to try various commands to alter
   this text.  Don't worry if you change this text before we tell you to;
   that is called "editing" and that's what Emacs is for.
+  #+END_SRC
+
+  #+BEGIN_QUOTE
+  これはEmacsチュートリアルのテキストを，あなた向けに少し調整したものです。後で，この本文を変更するための様々なコマンドを試すよう指示されますが，その前に本文を変えてしまっても構いません。それは「編集する」と呼ばれるものであり，Emacsはそのためにあるのです
   #+END_QUOTE
 
-  「これはEmacsチュートリアルのテキストを，あなた向けに少し調整したものです。後で，この本文を変更するための様々なコマンドを試すよう指示されますが，その前に本文を変えてしまっても構いません。それは「編集する」と呼ばれるものであり，Emacsはそのためにあるのです」
-
   <br>
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   まずは、ファイルの中を移動して行く方法を知る必要があります。C-v によっ
   て次の画面に進むことはもう判りました。前の画面に戻るには、M-v （メタキー
   を押しながら v、もしくは <ESC> を押して離して v）です。
 
-  &gt;&gt; 何度か M-v と C-v を試して下さい。
-  #+END_QUOTE
+  >> 何度か M-v と C-v を試して下さい。
+  #+END_SRC
 
   「C-vはしょっちゅう使うけどM-vはほとんど使わない」「なぜだ」「Escをメタキーにしてたせいでいちいち画面戻すのに二個のキー順番に押すのが面倒だったから」「…Altがメタキーなのを知っていたら良かったな」「うん」「これから使うようになるか？」「頭の回路が変わるくらい使えばいずれは」「早くそうなるといいな」「うん」
 
   <br>
-  #+BEGIN_QUOTE
+  #+BEGIN_SRC 
   It is ok to scroll this text in other ways, if you know how.
-  #+END_QUOTE
+  #+END_SRC
 
-  「この文章を進める他の方法を知っているなら，それでもいいですよ」
+  #+BEGIN_QUOTE
+  この文章を進める他の方法を知っているなら，それでもいいですよ
+  #+END_QUOTE
 
   <br>
   <br>
