@@ -1,5 +1,6 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: \n:t
+#+OPTIONS: ^:{}
 
 * 06 - い…引数
 
@@ -100,7 +101,10 @@
   如果你的鼠标有滚轮的话，你也可以使用滚轮来滚动。
   #+END_SRC
 
-  「滚动はスクロールのことね」「読めるのか」「読めるようになりたい。これは何回も出てくるから覚えた」「対訳はいい教材だな」「うん。ねえ，日本語版の真中のボタンって，UNIXの3ボタンマウスのことかな？いちおう中クリックでも動くけど」「」
+  「滚动はスクロールのことね」「読めるのか」「読めるようになりたい。これは何回も出てくるから覚えた」「対訳はいい教材だな」「うん。ねえ，日本語版の真中のボタンって，UNIXの3ボタンマウスのことかな？いちおう中クリックでも動くけど」「3ボタンマウス」「昔UNIXにはそういうマウスがあったの」
+
+  ![[https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/An_Early_Three_Buttoned_Mouse.jpg/1024px-An_Early_Three_Buttoned_Mouse.jpg][Lars Pind]]
+  (Lars Pind, [[https://commons.wikimedia.org/wiki/File:An_Early_Three_Buttoned_Mouse.jpg][An_Early_Three_Buttoned_Mouse]])
 
   <br>
   <br>
