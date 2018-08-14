@@ -1,5 +1,6 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: \n:t
+#+OPTIONS: ^:{}
 
 * 02 - 監獄からの脱出
 
