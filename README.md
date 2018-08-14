@@ -16,6 +16,10 @@
 
 [GitHubリポジトリ](https://github.com/jamcha-aa/Emacs-tutorial)  
 
+<br>
+<br>
+この物語はフィクションであり，実在の人物・ソフトウェア・団体とは一切関係ありません。  
+
 <br>  
 <br>  
 Copyright (c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.  
