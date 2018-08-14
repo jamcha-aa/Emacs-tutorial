@@ -1,5 +1,6 @@
 #+OPTIONS: toc:nil
 #+OPTIONS: \n:t
+#+OPTIONS: ^:{}
 
 * 05 - Move! Move! Move!
 
