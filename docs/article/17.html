@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>17 - マイナーも厚い壁 | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/21.9c632216.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基本のキ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>処理ーン☆</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>ラストスパート</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/15.html" class="sidebar-link">15 - 癒しの泉</a></li><li><a href="/Emacs-tutorial/article/16.html" class="sidebar-link">16 - メジャーの厚い壁</a></li><li><a href="/Emacs-tutorial/article/17.html" class="active sidebar-link">17 - マイナーも厚い壁</a></li><li><a href="/Emacs-tutorial/article/18.html" class="sidebar-link">18 - 心の声</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_17-マイナーも厚い壁"><a href="#_17-マイナーも厚い壁" aria-hidden="true" class="header-anchor">#</a> 17 - マイナーも厚い壁</h1> <pre><code>    メジャーモードが「メジャー」というからには「マイナーモード」もあります。
+    マイナーモードはメジャーモードの代わりになるものではなく、それをちょっ
+    とだけ修正するものです。各マイナーモードは、メジャーモードや他のマイナー
+    モードに影響を与えずに、それだけをオンオフできます。つまり、マイナーモー
+    ドを全く使わなかったり、一個だけ使ったり、いくつかを同時に使ったりでき
+    るのです。
+</code></pre> <p>「私のマイナーモード!」「<a href="https://github.com/jamcha-aa/auto-org-md" target="_blank" rel="noopener noreferrer">auto-org-md<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>だな」「私は<a href="https://orgmode.org/" target="_blank" rel="noopener noreferrer">org-mode<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>で文章書いてるんだけど，当時 GitHub は org モードに対応してなくて，いちいち C-c C-e m m で markdown に変換する必要があったんだ。でもそれが面倒だから，セーブするごとに出力してくれるといいな，と思ったのがきっかけ」「ああ」「ほとんど初めての lisp プログラムだったけど，melpa のレビュアーの人たちがすごく親切だったから形になった。ありがとうございます」「本当にありがたいことだ」</p> <br> <pre><code>通常の文章を編集している時にとても便利なマイナーモードの一つにオートフィ
+ル（Auto Fill）モードというのがあります。このモードがオンの時に文章を
+入力していって行を長くしすぎた場合、自動的に単語と単語の間で行が分割さ
+れます（日本語の場合はどの文字の間でも。禁則処理もなされます）。
+
+Auto Fill モードは M-x auto-fill-mode &lt;Return&gt; とやればオンにできます。
+それがオンの状態で M-x auto-fill-mode &lt;Return&gt; とやれがオフにできます。
+このコマンドは、モードがオフならオンに、オンならオフにするのです。こう
+いうのを「モードをトグルする」と言います。
+
+&gt;&gt; M-x auto-fill-mode &lt;Return&gt; とタイプして、 &quot;asdf &quot; で始まる行を入力
+   して下さい。行が分割されるまで何度も &quot;asdf &quot; とタイプしましょう。ス
+   ペースを忘れずに。Auto Fill はスペースが入力された時のみ働きます。
+
+右マージンは通常 70 文字（カラム）ですが、C-x f コマンドでこれを変更す
+ることができます。指定の文字数を数値引数として与えます。
+
+&gt;&gt; 数値引数 20 で C-x f をやりましょう。 (C-u 2 0 C-x f)。
+   それから適当な文章（英語）を入力し、20 文字で行が分割されるのを見て
+   みましょう。それから C-x f コマンドでまたマージンを 70 文字に戻して
+   下さい。
+</code></pre> <p>「トグルは Emacs の専門用語じゃなくてトグルスイッチからきてます」「トグルスイッチ」「ブレーカーのスイッチみたいに，壁から飛び出た棒を上下すると電源がオンオフされる仕組みのスイッチ」「わかった」</p> <p>「Auto Fill が役立つのは自前で文書を公開するときとか，かな？こういうチュートリアルもそう」「ほう」「GitHub とか GitBook は何もしなくても大体の長さで折り返してくれるからお手軽です」</p> <p>「ふむ，ところで君が会話文で改行しないのはなぜだ？」「いつか聞かれると思った。理由は三つ。まず話すごとに改行してると誰が言ってるのかわからなくなる」「誰が」「私が」「お…おう。じゃあ，カッコの前にキャラ名つければわかるんじゃないか？」「脚本みたいに？」「そうだ」「それが二つめの理由なんだけど，脚本とか TRPG のログみたいで物語読んでる感じがしない」「誰が」「私が」「ほ…ほう…。じゃあ三つめは？」「markdown は改行もインデントも反映してくれないから」</p> <p>「インデントはしてくれないが改行はしてくれるぞ」「え」「改行したあとに，半角スペース 2 個入れてみろ」</p> <br> <p>「…」<br>
+「な？」<br>
+「…うん」<br>
+「まさか知らなかったのか？」<br>
+「…うん」<br>
+「…すまん。私がもっと早く伝えておくべきだった。君の独自表現だと思って…」<br>
+「君のせいじゃないよ。私が無知だったから…。GitHub で小説なんてなまいきなことしてさ…」<br>
+「…これ，今後も使っていくのか」「使わない。もう引き返せない。これが私のスタイルだから」「あ…そう」</p> <br> <pre><code>パラグラフの途中を変更しても Auto Fill モードはそれを自動的にフィルし
+直しはしません。
+パラグラフをフィルし直すにはカーソルをそのパラグラフの中に置いてから
+M-q をタイプします。
+
+&gt;&gt; カーソルをこの行直前のパラグラフに移動させ M-q とタイプして下さい。
+</code></pre> <p>「TeX ではお世話になりました」「どういう意味だ」「長い段落の文章書いても，M-q でキッチリ揃えてくれるから達成感が得られた。でも pdf とか epub に変換したり，Web に出力するときには足かせになることがあるので，ご利用は計画的に」「たとえば？」「org-mode の機能を使って html に変換すると，改行した部分にスペースが入っちゃう」「それは困るな」「だからウインドウの横幅を決めて改行しないようにした」</p> <br> <p>「特別企画!リーナスの謎!」「…そんな予定あったか？」「本日の試合は終了したため，現在，特別番組をご覧いただいております」「…」「Linux と Git 作ったリーナス・トーバルズって知ってるでしょ」「もちろん」「私に手足の使い方を教えた人」「すごい表現だな」「リーナスは<a href="https://web.archive.org/web/20061124122032/http://www.stifflog.com/2006/10/16/stiff-asks-great-programmers-answer/" target="_blank" rel="noopener noreferrer">uEmacs/PK<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>っていう Emacs を使ってるらしいんだけど」「色々ある Emacs のひとつだな」「うん。それが本当なのか知りたくて」「本人が言っているのに疑うのか…？」「だって最後の更新が 20 年以上前なんだもん」「ふむ」「<a href="https://jp.linux.com/linux-community/30linuxkerneldevelopers/391903-30linuxlinus-torvalds" target="_blank" rel="noopener noreferrer">他のインタビュー<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>だと，使ってるツールにブラウザと Git 端末は挙げられてたけど，uEmacs/PK はあげられてなかったし」</p> <p>「それで，どうだったんだ」「<a href="https://www.youtube.com/watch?v=S5S9LIT-hdc" target="_blank" rel="noopener noreferrer">uEmacs/PK<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>!使ってました!」「おお」「映画にありがちな超高速タイピングじゃないところもかっこいい」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/16.html" class="prev">
+          16 - メジャーの厚い壁
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/18.html">
+          18 - 心の声
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/21.9c632216.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>

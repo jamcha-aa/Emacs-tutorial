@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>19 - 隔てるものと分かつもの | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基本のキ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>処理ーン☆</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>私の最高のアシスタント</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/19.html" class="active sidebar-link">19 - 隔てるものと分かつもの</a></li><li><a href="/Emacs-tutorial/article/20.html" class="sidebar-link">20 - ゴールが見えてきた!</a></li><li><a href="/Emacs-tutorial/article/21.html" class="sidebar-link">21 - 答えは目の前にある</a></li><li><a href="/Emacs-tutorial/article/22.html" class="sidebar-link">22 - 旅立ち</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_19-隔てるものと分かつもの"><a href="#_19-隔てるものと分かつもの" aria-hidden="true" class="header-anchor">#</a> 19 - 隔てるものと分かつもの</h1> <pre><code>＊複数のウィンドウ
+==================
+
+Emacs の素敵な機能の一つとして、一つの画面に同時にいくつものウィンドウ
+を表示することができます。ここで言う「ウィンドウ」は他のアプリーケーショ
+ンで言うところの「ウィンドウ」とは別です。そちらの方は Emacs では、
+「フレーム」と呼びます（次の節で説明します）。Emacs のマニュアルには用
+語集がありますので、参考にしてください。
+</code></pre> <p>「ウィンドウは画面分割で，フレームは二つの Emacs を起動すること」「ほう」「前はメモ帳とかテキストエディットみたいに，一画面だけの Emacs で文章書いてた。でも<a href="https://github.com/ch11ng/exwm" target="_blank" rel="noopener noreferrer">exwm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>使うようになってから全部変わった」「君は本当に exwm が好きだな」「うん」</p> <br> <pre><code>&gt;&gt; カーソルをこの行に持ってきて C-u 0 C-l とタイプして下さい（最後のは
+   CONTROL-L ですよ、CONTROL-1 じゃありません）。
+
+&gt;&gt; それから C-x 2 で画面を２つのウィンドウに分割しましょう。どちらのウィ
+   ンドウもこのガイドを表示しています。カーソルは上のウィンドウ内です。
+</code></pre> <p>「C-u 0 C-l って英語版とか中国語版だと C-l C-l になってるんだよね」「ふむ」「機能は一緒なんだけど何が違うんだろ。ポリシー？」</p> <br> <pre><code>&gt;&gt; C-M-v とタイプし下のウィンドウをスクロールさせましょう。
+   （メタキーがない場合は ESC C-v とタイプします。）
+</code></pre> <p>「これ右隣のウィンドウしかスクロールさせないからコマンドは知ってるけど私ほとんど使わない…」「じゃあすぐウィンドウ操作したいときはどうするんだ？」「…マウス使う」「あちゃー」「あちゃーって何!？いいじゃんマウスだって立派な道具なんだから!もしマウス使ったらしぬ病にかかったら<a href="https://github.com/aki2o/owdriver" target="_blank" rel="noopener noreferrer">owdriver<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>使うよ」</p> <br> <pre><code>&gt;&gt; C-x o（&quot;o&quot; は &quot;other（他方）&quot; を意味します）をタイプし下のウィンド
+   ウにカーソルを移して下さい。
+
+&gt;&gt; 下のウィンドウで C-v や M-v を使ってスクロールさせましょう。
+   ここに書いてある指示は上のウィンドウで読み進んでください。
+
+&gt;&gt; もう一度 C-x o とタイプし、カーソルを上のウィンドウに戻します。
+   カーソルは上のウィンドウの元あった位置に戻ります。
+</code></pre> <p>「いま画面 9 分割とか 10 分割くらいして使ってるんだけどさ (<a href="https://jamcha-aa.github.io/Emacs-tutorial/07.html" target="_blank" rel="noopener noreferrer">7 話参照<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>)」「多いな」「C-x o だと他のウィンドウに移動するのも一苦労だから<a href="https://github.com/dimitri/switch-window" target="_blank" rel="noopener noreferrer">switch-window<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>使ってます。exwm だと欠かせないパッケージのひとつ」「なんだこれは」「C-x o するとどのウィンドウに飛ぶか選べるの」「なるほど」</p> <br> <pre><code>C-x o を使ってウィンドウ間を行ったり来たりできます。各ウィンドウはそれ
+自身のカーソル位置を保持していますが、一度には一つのウィンドウだけがカー
+ソルを表示します。通常の編集コマンドは皆カーソルがあるウィンドウに対し
+て働きます。そのウィンドウを &quot;selected window (選択中のウィンドウ)&quot; と
+呼びます。
+
+C-M-v コマンドは、一つのウィンドウで文章を編集中に他のウィンドウを参照
+している時に役立ちます。編集中の場所にカーソルを保ったまま、C-M-v で他
+のウィンドウを読み進めて行くことができます。
+
+C-M-v はコントロールメタ文字の一例です。メタキーがある場合は、コントロー
+ルキーとメタキーを押しながら v をタイプします。コントロールキーとメタ
+キーはどちらを先に押しても構いません。どちらもその後にタイプされる文字
+に対する修飾キー (modifier key) として働くからです。
+
+メタキーが無い場合、ESC キーを使いますが、この場合は順番が大事です。ま
+ず ESC を押してから離して C-v を打ちます。C-ESC v では駄目です。これは
+ESC はそれ自体が一つの文字で修飾キーではないからです。
+</code></pre> <p>「ウィンドウが多いと一番困るのが『自分がどこにいるのか忘れる』ことなの」「どこにいるか？」「ブラウザ見てたり他のソースコードに目うつりしてると，いまアクティブになってるウィンドウがどれかを忘れてコマンド誤爆したりする」「ああ…」「<a href="https://github.com/yoshida-mediba/hiwin-mode" target="_blank" rel="noopener noreferrer">hiwin<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>はアクティブじゃないウィンドウの色変えてくれるんだけど，Web ブラウザの背景まで変えてくれるわけないから…」「exwm の欠点か…」</p> <p>「でもね」「ん？」「目うつりするってことは，いま見てるウィンドウをアクティブにすればいいんじゃないかって思うんだ」「そんなことできるのか？」「うん。<a href="https://picoledelimao.github.io/blog/2017/01/28/eyeball-tracking-for-mouse-control-in-opencv/" target="_blank" rel="noopener noreferrer">アイトラッキング<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>でマウス操作できるから，マウスポインタがある位置のウィンドウが常にアクティブになるように Emacs の設定書けば」「それじゃあ，これを導入すればいいじゃないか」「そうそう。君がダイヤでできてたら君を売ったお金で Tobii 買ってさ」</p> <p>「…私と引き換えか？」「あたりまえじゃん」「…本気か？」「…ふふっ。やだなあ。君なんか一円にもならないよ」「…だろうな」</p> <p>「でも私にとってはかけがえのない仲間だから。だから何があっても売らない」「そうか…」「だから安心して」「…ああ。ありがとう」</p> <pre><code>&gt;&gt; 上のウィンドウで C-x 1 とタイプし下のウィンドウを消しましょう
+
+（もし下のウィンドウで C-x 1 とタイプすると上のウィンドウが消えます。
+このコマンドは「現在自分がいるウィンドウだけにしなさい」というものだと
+思って下さい。）
+
+両方のウィンドウに同じバッファを表示する必要はありません。一方のウィン
+ドウで C-x C-f でファイルを開いても他方のウィンドウは変化しません。各
+ウィンドウにおいて別々のファイルを開くことができるのです。
+
+&gt;&gt; C-x 4 C-f とタイプし続けて何か自分のファイル名を入力して下さい。
+   &lt;Return&gt; で入力を終わらせて下さい。今指定したファイルが下のウィンド
+   ウに現れます。カーソルもそっちに移ります。
+
+&gt;&gt; C-x o とタイプし上のウィンドウに戻って下さい。それから C-x 1 で下の
+   ウィンドウを消しましょう。
+</code></pre> <p>「C-x 4 ってほとんど使ったことなかったけど，こんな機能だったんだ」「今までどうやってウィンドウ分割してたんだ？」「とりあえず scratch バッファの状態で分割しまくって，ひとつひとつ開いてからマウスでグィーっと幅とか高さの調整」「あまり効率よくなさそうだな」「だから C-x 1 すると故郷への郷愁にかられるんじゃん」「そういうことだったのか…」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/18.html" class="prev">
+          18 - 心の声
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/20.html">
+          20 - ゴールが見えてきた!
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/23.be6b9f4a.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>
