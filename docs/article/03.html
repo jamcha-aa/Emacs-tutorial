@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>03 - 偽装テキスト | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/7.8104d80b.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>基本のキ</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/03.html" class="active sidebar-link">03 - 偽装テキスト</a></li><li><a href="/Emacs-tutorial/article/04.html" class="sidebar-link">04 - Go! Go! Go!</a></li><li><a href="/Emacs-tutorial/article/05.html" class="sidebar-link">05 - Move! Move! Move!</a></li><li><a href="/Emacs-tutorial/article/06.html" class="sidebar-link">06 - 賢馬は「引数」が読める</a></li><li><a href="/Emacs-tutorial/article/07.html" class="sidebar-link">07 - 広き世界へ</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>処理ーン☆</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_03-偽装テキスト"><a href="#_03-偽装テキスト" aria-hidden="true" class="header-anchor">#</a> 03 - 偽装テキスト</h1> <p>「チュートリアルの起動方法は覚えてるな？」EeePC が聞く。「F1 t でしょ」「そうだ」</p> <p>日本語のチュートリアルを起動すると，2 行目にいきなり英語が表れる。</p> <pre><code>NOTICE: The main purpose of the Emacs tutorial is to teach you
+the most important standard Emacs commands (key bindings).
+However, your Emacs has been customized by changing some of
+these basic editing commands, so it doesn't correspond to the
+tutorial.  We have inserted colored notices where the altered
+commands have been introduced. [More]
+</code></pre> <p>「同じ機能でもショートカットの種類がいくつかあるよ，って書いてある」「混乱しないのか？」「使えるやつ一種類覚えておけばいいと思う」</p> <p>「ふむ。では冗談はここまでにして正しい答えを頼む」「私が Emacs カスタマイズしてるせいでショートカットキーが文章と違ってる場合があるから注意してって」「ほう」「そのためのお知らせも入れておいたよ，だって」「ふむ」</p> <pre><code>Emacs のコマンドを入力するには、一般にコントロールキー（キートップに
+CONTROL とか CTRL とか CTL と書いてある）やメタキー（キートップに META
+とか ALT とか EDIT と書いてある）を使います。そこで、CONTROL とか META
+とかを書く代わりに、次のような記法を使うことにします。
+</code></pre> <p>「さらっと書いてあるけど Emacs はコントロールキーとメタキーをスマホの親指くらい使います」「全部じゃないか」「ほんとにそれくらい使います」</p> <br> <pre><code>C-&lt;文字&gt;   コントロールキーを押したまま、&lt;文字&gt;キーを押します。例えば、
+    C-f はコントロールキーを押しながら f のキーを押すことです。
+M-&lt;文字&gt;   メタキーを押したまま、&lt;文字&gt;キーを押します。もしメタキーがな
+    い場合は、エスケープキーを押してから離し、それから&lt;文字&gt;キー
+    を押します。以降エスケープキーのことを &lt;ESC&gt; と書きます。
+</code></pre> <p>「恥ずかしながらメタキーはずっと Esc キーを使っておりました」「本当に恥ずかしいな。不便じゃないのか？」「変換キーに割り当ててたから…」「割り当てる」「変換キーを Esc キーにして使ってたってこと」「ふむ」</p> <p><strong>C-f はコントロールキーを押しながら f のキーを押すことです。</strong></p> <p>「みんなコントロールキーどうやって押してるんだろうねえ」「君はどうしてるんだ」「今は無変換キーに割り当ててます」「さっきの Esc キーみたいにか」「そうそう」「そういうソフトがあるのか」「昔は xmodmap 使ってたんだけど，今は<a href="https://wiki.archlinux.jp/index.php/X_KeyBoard_extension" target="_blank" rel="noopener noreferrer">xkb<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>がいいみたい。Windows は ChgKey とか yamy とか」</p> <br> <p>「それじゃあ M-x も学んだことだし少し応用してみる？」「うむ」</p> <pre><code>M-x help-with-tutorial-spec-language
+</code></pre> <p>「M-x のあとは自動的に空白ができるから文字だけ入れればいいよ」「C-f に比べると随分長いな」「コマンドの正式名称みたいなものだね。地図アプリで住所から探す感じ」</p> <blockquote><p>English<br>
+Thai<br>
+Korean<br>
+Japanese<br>
+Hebrew<br>
+Romanian<br>
+Slovak<br>
+Czech<br>
+Brazilian Portuguese<br>
+Swedish<br>
+Polish<br>
+Spanish<br>
+Slovenian<br>
+Italian<br>
+French<br>
+German<br>
+Dutch<br>
+Esperanto<br>
+ASCII<br>
+Russian<br>
+Chinese-GB18030<br>
+Chinese-GBK<br>
+Chinese-BIG5<br>
+Chinese-GB</p></blockquote> <p>「チュートリアルの各言語版一覧です」「エスペラント版まであるのか」「すごいよね」「中国語が四種類あるが」「台湾は繁体字だから BIG5 で簡体字は GB で始まるやつ。たしか GB18030 が一番新しい規格だったと思う」「詳しいな」「調べたから」</p> <br> <pre><code>    ！重要！: Emacs を終了するには、C-x C-c をタイプします。
+</code></pre> <p>「日本語版だとこれだけなんだけど，英語版だとこれ以降もなんか書いてある」</p> <pre><code>To quit a partially entered command, type C-g.
+To stop the tutorial, type C-x k, then &lt;Return&gt; at the prompt.
+</code></pre> <blockquote><p>「コマンドの入力をやめるときは C-g をタイプします。チュートリアルを中断するには C-x k をタイプし，リターンキーを押します」</p></blockquote> <p>「リターンキーとは」「キーボード右にある折れ曲がった矢印がついてたりするでかいキーのことです。Enter と書いてある場合もあります」「ッターン!…で憎まれているキーだな」「そう」「君はほとんど押さないようだが」「Emacs だと C-m を使います」「むしろ不便じゃないか？」「うーん，片手しか使えないときってごはん食べるときくらいしかないし…」「日本語入力でも使うだろう」「SKK はリターンのかわりに C-j を使うんだよ」「どうしてそこまで排除しようとするんだ」「リターン禁止ってなんかかっこいいじゃん」「…君は前からそういうやつだったな」</p> <br> <pre><code>&quot;&gt;&gt;&quot; で始まる行は、その時何をすべきかを指示しています。例えば、
+
+
+
+
+[このページの途中の空白行はわざと入れてあります。ガイドは下に続きます。]
+
+
+
+
+&gt;&gt;  では C-v（次の画面を見る）をタイプして次の画面に進んで下さい。
+（さあ、やってみましょう。コントロールキーを押しながら v です）
+以降、一画面を読み終えるたびに同様にして次の画面に読み進んで下さい。
+
+前の画面と次の画面とでは、表示される内容に何行かの重なりがあります。こ
+れは、表示されている内容が連続していることがすぐ判るようにするためです。
+</code></pre> <p>「これ最初見たときびっくりしたんだけど」「何だ」「チュートリアル起動したとき，空白行の長さがウインドウの高さで変わるの」</p> <p>注: この小説では変わりません</p> <p>「ほう」「これテキストファイルに見せかけたプログラムなのかな。怖い」「怖い？何が」「読んでる途中で」</p> <br> <p><span style="font-size: 200%;">怖い画像</span></p> <br> <p>「とか」「それは嫌だな」</p> <p>注: Emacs のチュートリアルは画面にあわせ調整されたテキストファイルです。安心してご覧ください。</p> <br> <pre><code>This is a copy of the Emacs tutorial text, customized slightly for
+you.  Later on we will instruct you to try various commands to alter
+this text.  Don't worry if you change this text before we tell you to;
+that is called &quot;editing&quot; and that's what Emacs is for.
+</code></pre> <blockquote><p>これは Emacs チュートリアルのテキストを，あなた向けに少し調整したものです。後で，この本文を変更するための様々なコマンドを試すよう指示されますが，その前に本文を変えてしまっても構いません。それは「編集する」と呼ばれるものであり，Emacs はそのためにあるのです</p></blockquote> <br> <pre><code>まずは、ファイルの中を移動して行く方法を知る必要があります。C-v によっ
+て次の画面に進むことはもう判りました。前の画面に戻るには、M-v（メタキー
+を押しながら v、もしくは &lt;ESC&gt; を押して離して v）です。
+
+&gt;&gt; 何度か M-v と C-v を試して下さい。
+</code></pre> <p>「C-v はしょっちゅう使うけど M-v はほとんど使わない」「なぜだ」「Esc をメタキーにしてたせいでいちいち画面戻すのに二個のキー順番に押すのが面倒だったから」「… Alt がメタキーなのを知っていたら良かったな」「うん」「これから使うようになるか？」「頭の回路が変わるくらい使えばいずれは」「早くそうなるといいな」「うん」</p> <br> <pre><code>It is ok to scroll this text in other ways, if you know how.
+</code></pre> <blockquote><p>この文章を進める他の方法を知っているなら，それでもいいですよ</p></blockquote> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/02.html" class="prev">
+          02 - 監獄からの脱出
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/04.html">
+          04 - Go! Go! Go!
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/7.8104d80b.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>

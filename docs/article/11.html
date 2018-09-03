@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>11 - お前を元に戻す 1 つの方法 | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/15.07a5dc90.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基本のキ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>処理ーン☆</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/08.html" class="sidebar-link">08 - ドレミファ挿入</a></li><li><a href="/Emacs-tutorial/article/09.html" class="sidebar-link">09 - ことばダイエット</a></li><li><a href="/Emacs-tutorial/article/10.html" class="sidebar-link">10 - お前を消す 88 の方法</a></li><li><a href="/Emacs-tutorial/article/11.html" class="active sidebar-link">11 - お前を元に戻す 1 つの方法</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_11-お前を元に戻す-1-つの方法"><a href="#_11-お前を元に戻す-1-つの方法" aria-hidden="true" class="header-anchor">#</a> 11 - お前を元に戻す 1 つの方法</h1> <p>「『それは，お前と戦うことだ!』真槍ジャラツを構え，ヴェリオは吼えた。その矛先は，今や極焔の魔神と化したシバマルに向けられている。互いに流れる沈黙。するとそのとき，聖霊が最後の鐘を鳴らし，」</p> <p>「盛り上がるのはいいから，チュートリアルを進めようか」読書を楽しむ私に，EeePC が水を差す。「ええー。これからいいところなのに」「何がいいとこなんだ。まだ半分も進んで…」「これから二人の最後の戦いが始まるってときに，最後の審判が始まっちゃうんだよ!」「最後の審判？」</p> <p>言って EeePC は後悔した。「極星神は愚かな人類ともども世界を滅ぼそうとしたんだけど，カンナの説得に応じて，猶予を七日間だけ与えたの。それだけの価値を示してみろ，ってね。それでヴェリオたちは反理の法を使って時間の流れを緩やかにして，なんとか心魔七聖，つまり幻夢界のアイシャ，幻鬼界のイオ，」</p> <p>「…その話は今度聞こう」「ダメだよ!今，十三惑星が半弧を描いて心魔の力が弱まってるからこそ倒せるのに!一人一人が三戦神と同じくらいの力を持ってるんだよ？それでもなんとか七柱倒したはずなのに妖気がおさまらないの。なんでかわかる？」「…いや」「心魔七聖にはなんと!八柱目がいたんだよ!」「…あ，ああ」「しかもそれがもう驚いたのなんのって，…誰だかわかる？」「…い，いや，わかりたくもな…」「あのシバマルだったんだよ!三戦神との戦いで死んだと思ってたあのシバマルが!もう私嬉しくって。でもね…」</p> <p>それから EeePC はみっちりと『極星凌雲記』の魅力を聞かされ，その CPU は見事に冷え切った。</p> <br> <pre><code>＊取り消し(UNDO)
+================
+
+もし、文章を変更した後でその変更は間違いだったと思ったら、取り消し
+（undo）コマンド C-x u でその変更を取り消すことができます。
+</code></pre> <p>「…」「おい，何かコメントはないのか？」「…別に」「君は C-x u を使ってないだろう」「どうしてわかるの」「それくらいキー入力を見ていればわかる」「いつも監視してるの？ヘンタイ」「もう，機嫌を直してくれよ。すまなかった。今度からはちゃんと話を聞くから」「…ほんと？」「約束する」</p> <br> <pre><code>通常、C-x u は一つのコマンドによる変更を取り消します。続けて何度も C-x
+u を行えばそのたびに一つ前のコマンドが取り消しになります。
+
+ただしこれには例外が二つあります。まず、文章を変更しないコマンドは取り
+消しになりません。カーソル移動やスクロールのコマンドがそれに当たります。
+それから、文字の挿入（自己挿入コマンド）は 20 個一まとめで扱われます。
+これは文字の挿入を取り消すための C-x u の回数を減らすためです。
+
+&gt;&gt; この行を C-k で消して下さい。そして、C-x u で戻して下さい。
+</code></pre> <p>「私は C-x u の代わりに <strong>C-/</strong> を使う。連打できるから便利」「ふむ」「間違ってアンドゥ (undo) しちゃったときも取り消しできて，redo っていうんだけど」「ほう」「 <strong>C-g C-/</strong> で redo できる」「C-g は困ったときの C-g か？」「そそ。取り消しを取り消すって感じ。さらに間違って redo しちゃったときも C-g C-/で元に戻せる」</p> <br> <pre><code>C-_ も取り消し（undo）を行なうコマンドです。機能は、C-x u と同じですが、
+続けて何度もタイプする場合はより便利です。C-_ の問題は、キーボードによっ
+てはどうやってタイプするのか分りづらい事です。だから C-x u があるので
+す。端末によっては、コントロールキーを押したまま / をタイプすると C-_
+をタイプしたことになります。
+
+C-_ や C-x u は数値引数を繰り返し回数と解釈します。
+
+文章の削除も文章の消去と同様に取り消せます。削除と消去の違いは再入でき
+るかどうかの違いだけで、取り消しには関係ありません。
+</code></pre> <p>「アンドゥも C-u できるみたい」「C-u 8 C-/みたいにか」「うん。今やったらできた」</p> <br> <p>「次の項目は『ファイル』だから，今回はここまでにしておこうか」「うむ。…そういえば君はファイルとは何だ，と聞かれたらどう答える？」</p> <p>「うん，それずっと前から考えてたんだ」「前から？」「そう。書類，っていう表現はもう適さないでしょ？動画ファイルとかあるし」「確かにな」</p> <p>「もっと抽象的に，『意味のある情報の単位』のことだよ，って言って理解してくれたらいいな，と思ってます。あってるかどうかわからないけど」「情報の単位？」「うん。情報はバラバラのままじゃ何の役にもたたない。だからそれを使えるよう，情報をまとめたものをファイルっていうの。どう？」「ふむ，ではフォルダはどうなるんだ？」「ファイルもどんどん増えていくと，ある程度ルールにのっとって分ける必要が出てくるから，そのルールをもとにファイルを仕分けする機能をフォルダっていうんだ。なんてね」</p> <p>「ほう」「ファイルもフォルダも人間が処理しやすいよう情報をまとめているだけで，コンピュータだったら何百ギガもある 1 個のテキストのまま自由自在に処理できる。でもそれだと人間からはわかりにくいから，ファイルを日付ごとに分けたり，もしくはバラバラな情報に ID を紐づけして 1 つにまとめたりする」</p> <p>「なるほどな。…ふむ。私は納得した」「ほんと？」「もちろんファイルの役割すべてをカバーした説明とは思わないが」「だよね」「だが君が自分なりに論理的な言葉を作ろうとする，その姿勢はかけがえのないことだと私は考える」「う，なんかはずかしいな」「おそらく君が以前，削除と消去の違いで混乱したのも，自分の中で理解しようとしたからだろう。それで君は苦しんだかもしれない。けれども，わかろうとすること，論理を組み立てようとすること，それはとても大事なことなんだ。君は良いことをしたんだよ。だからもっと自分に自信をもってほしい」</p> <p>「ありがとう。なんだかうれしいな」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/10.html" class="prev">
+          10 - お前を消す 88 の方法
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/12.html">
+          12 - アポクリファイル
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/15.07a5dc90.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>

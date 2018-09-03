@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>10 - お前を消す 88 の方法 | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/14.3de62dae.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基本のキ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>処理ーン☆</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/08.html" class="sidebar-link">08 - ドレミファ挿入</a></li><li><a href="/Emacs-tutorial/article/09.html" class="sidebar-link">09 - ことばダイエット</a></li><li><a href="/Emacs-tutorial/article/10.html" class="active sidebar-link">10 - お前を消す 88 の方法</a></li><li><a href="/Emacs-tutorial/article/11.html" class="sidebar-link">11 - お前を元に戻す 1 つの方法</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_10-お前を消す-88-の方法"><a href="#_10-お前を消す-88-の方法" aria-hidden="true" class="header-anchor">#</a> 10 - お前を消す 88 の方法</h1> <p>「前回助けてくれてありがとね」「元気になってくれて私も嬉しいよ」「うん。あのね，わかんなくなっちゃったのはこれが原因なんだ。まず説明だけ出してみる」「うむ」</p> <br> <pre><code>これで、Emacs で文章を入力し、また間違いを修正するもっとも基本的な方法
+を学んだことになります。文字と同じ様に、単語や行も削除することができま
+す。削除操作について要約すると次のようになります。
+
+&lt;Delback&gt;    カーソルの直前の文字を削除
+C-d	     カーソルのある文字を削除
+
+M-&lt;Delback&gt;  カーソルの直前の単語を消去
+M-d	     カーソル位置の後ろにある単語を消去
+
+C-k	     カーソル位置から行末までを消去
+M-k	     カーソル位置から文末までを消去
+</code></pre> <p>「…」「わかる？」「…」「じゃあ英語のを載せてみるね」</p> <br> <pre><code>&lt;DEL&gt;        Delete the character just before the cursor
+C-d   	     Delete the next character after the cursor
+
+M-&lt;DEL&gt;      Kill the word immediately before the cursor
+M-d	     Kill the next word after the cursor
+
+C-k	     Kill from the cursor position to end of line
+M-k	     Kill to the end of the current sentence
+</code></pre> <p>「…ふむ。これは機能が明確に違うというのが冒頭の単語でわかるな」「でしょ？」「だがここでいう &lt;DEL&gt; は Delete キーではないんだな？」「そうそう。Backspace。じゃあ元の文章載せるね」</p> <br> <pre><code>&lt;Delback&gt;    カーソルの直前の文字を削除（delete）
+C-d	     カーソルのある文字を削除（delete）
+
+M-&lt;Delback&gt;  カーソルの直前の単語を消去（kill）
+M-d	     カーソル位置の後ろにある単語を消去（kill）
+
+C-k	     カーソル位置から行末までを消去（kill）
+M-k	     カーソル位置から文末までを消去（kill）
+
+&lt;Delback&gt; と C-d に対する M-&lt;Delback&gt; と M-d は、C-f と M-f で始まった類
+似性をまた拡張します。ここで &lt;Delback&gt; はコントロール文字ではありません
+が、まあ、それは気にしないで下さい。C-k と M-k の関係は C-e と M-e の
+関係（行と文の対比）と同じです。
+</code></pre> <p>「英語版にしろ，これを一度に理解するのは難しいものがあるな」「うん。だから私，C-h (表の&lt;Delback&gt;)と C-d，あと C-k しか使えてない」「単語を消すというのも英語なら便利なのだろうが」</p> <p>「うーん。あ，ただね，このあとの機能はすごく便利だよ。便利というか必須」「ほう」</p> <br> <pre><code>バッファのどの部分でも消去（kill）できる単一の方法があります。消去した
+い部分の始めか終りに移動し、C-@ もしくは C-SPC をタイプします (SPC は
+スペースバーのことこです）。それから消去したい部分の反対の端に移動し、
+C-w をタイプします。これでその部分が消去されます。
+
+&gt;&gt; カーソルを前のパラグラフの最初の文字「バ」に移動させましょう。
+&gt;&gt; それから C-SPC をタイプします。&quot;Mark set&quot; というメッセージが画面の
+   下端に出るはずです。
+&gt;&gt; さらにカーソルを次の行の「終」に移動させます。
+&gt;&gt; C-w をタイプしましょう。「バ」から「終」の直前までが消去されます。
+</code></pre> <p>「これ他のエディタでいう『選択範囲を削除』。マウス使ったり Shift 使ったり」「それが Emacs だと C-SPC になるわけだな？」「C-SPC と C-w でワンセット。もう必須だよ」「イチ押しの機能か」「あとね，中国語だとちょっと日本語で役立つ説明がついてる」</p> <br> <pre><code>    【注意，C-&lt;SPC&gt; 往
+    往被中文用户设定成输入法热键，如果这样，C-&lt;SPC&gt; 就被系统拦截而无法传递
+    给 Emacs 了，在这种情况下可以使用 C-@。】
+</code></pre> <p>「日本語の全角/半角キーにあたるのが中国だと C-SPC らしいんだけど，そのときは C-@を使おうねって書いてある」</p> <p>「日本語でも役立つのか？」「うん。たとえば全角/半角キーもカナキーもついてない英字キーボードを使うとき」「そうか。たしかにな」</p> <p>「他には，Ubuntu とかで日本語使うときも，C-SPC が初期設定のことが多いの。他のキーに設定することもできるけど，それをしなくても C-@を知っていれば大丈夫」「なるほどな」「でも英字キーボードだと C-Shift-2 を同時押ししないと C-@は入力できないからかなり不便」「うーむ」「緊急のときなら役立つけど，ふだんは日本語切り替えを別のキーにして C-SPC を使ったほうがいいと思う」</p> <br> <pre><code>「消去（kill）」と「削除（delete）」の違いに気をつけて下さい。消去した
+文章は再度（どこにでも）挿入できますが、削除したものは再度挿入すること
+はできません（ただ下の章に書いてあるように undo はできます）。一旦消去
+したものを再度挿入することを再入（yanking）と呼びます。一般に、大量の
+文章を消すコマンドは、その文章を消去しますが（だから後で再入できます）、
+一文字とか空白行や空白文字のみを消すコマンドは、それらを削除します（だ
+からそれらは再入できません）。
+
+&gt;&gt; 空行でない行の先頭にカーソルを移動させて下さい。
+   それから C-k でその行の文章を消去して下さい。
+&gt;&gt; もう一度 C-k をタイプしてください。その行に続く改行文字が消されるの
+   が分りましたか。
+
+一回目の C-k はその行の文章を消し、２回目の C-k はその行自身を消してそ
+の先の行を上げてきます。C-k の数値引数の扱いは特殊です。引数分の行（行
+の内容と行自身）を消します。これは単なる繰り返しではありません。C-u 2
+C-k は２つの行とそれぞれに続く改行文字を消しますが、C-k を２度タイプし
+てもそうはなりません。
+</code></pre> <p>「yank は後で説明してくれるからここは C-k の機能を覚えよう」「うむ」「今まで意識してなかったけどはじめは改行文字だけ残すみたい」「ほう」「とりあえず行消すときに C-k って感じで使ってました」</p> <br> <pre><code>消去した文章を復活させる操作を再入（yanking）と呼びます。消した文章は、
+元と同じ場所にでも元とは違う場所にでも、さらには別のファイルにも再入で
+きます。また、何度も再入することで文章のコピーを複数作ることもできます。
+
+再入のためのコマンドは C-y です。これは、最後に消去した文章を現在カー
+ソルがある位置に再入します。
+
+&gt;&gt; 試して下さい。C-y をタイプして最後に消去した文章を再入しましょう。
+</code></pre> <p>「yank の説明。ペーストと意味は大体同じだと思ってます」「ふむ」「C-k で切り取った行を C-y で貼り付けなんてまさにカット&amp;ペースト」</p> <br> <pre><code>C-k を続けて実行すると、消去した各行は全部まとめて保存されるので、一回
+の C-y でそれらの行が全部再入されます。
+
+&gt;&gt; C-k を何度か続けてタイプしてみて下さい。
+
+さあ、消去した文章を再入しましょう。
+
+&gt;&gt; C-y をタイプして下さい。次にカーソルを数行下に移動させ、また C-y を
+   タイプして下さい。どうやって文章をコピーするか分りましたね。
+</code></pre> <p>「恥ずかしながら C-k した分をまとめて C-y するというのを知りませんでした」「今まで広い範囲をどうやって削除してたんだ」「さっき出てた C-SPC と C-w」「なるほど」「C-k してペーストできるのは一行だけだと思ってたんだよね」「ふむ」</p> <br> <pre><code>過去に消去した文章を再入したいのに、別の文章をその後消去した時はどうす
+ればよいでしょう？C-y は最後に消去したものを再入します。でもそれでよ
+り以前に消去した文章がなくなるわけではありません。そういう文章は M-y
+で再入できます。C-y で最後に消去した文章を再入した直後に M-y をタイプす
+ると、その再入された文章はそれ以前に消去したものに変更されます。何度も
+続けて M-y をタイプすると、さらに前に消去した文章を呼び戻せます。望み
+の文章に行き当ったら、それはそのままにして編集作業を続ければよいのです。
+
+ある回数だけ M-y を繰り返したら、また最初（つまり最後に消去した文章）
+に戻ります。
+
+&gt;&gt; 一行消去し、別の行に行ってその行を消去して下さい。
+   それから C-y で２番目（最後）に消去した行を再入して下さい。
+   続いて M-y でその行を最初に消去した行に変えて下さい。
+   M-y を続けどうなるか見てみましょう。２番目に消去した行が戻って来る
+   まで M-y を繰り返し、さらにもう何度か M-y をしましょう。
+   もし望みなら M-y に正もしくは負の数値引数を与えても良いでしょう。
+</code></pre> <p>「出ましたキルリング」「不要な専門用語の羅列は理解を妨げる」「ごめんなさい」「それで，キルリングとは」「コピーした内容は Emacs に複数保管されてます。C-y のあと M-y を押すと一個前に保管されたデータが貼り付けされます。さらに M-y 押すと二個前，さらに押すと三個前，…というふうに」</p> <p>「ふむ，聞く限りでは便利そうだな。Windows などで標準機能として持っていてもよさそうなものだが」「私みたいに記憶力の悪い人が混乱しないようにするためだと思う。二個前に何コピーしてたかなんて覚えてないもん」「一覧機能を持たせればいいと思うが」「じゃーん <a href="https://github.com/browse-kill-ring/browse-kill-ring" target="_blank" rel="noopener noreferrer">browse-kill-ring<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>」「あるじゃないか。ならそれを使えばいいだろう」「うーん，プログラミングだと活躍すると思うんだけど，文章で再利用する機会ってあまりないんだよねぇ…」「ではチュートリアルを終えたら<a href="https://www.masteringemacs.org" target="_blank" rel="noopener noreferrer">Mastering Emacs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>で英語とプログラミングを両方鍛えよう」「勘弁してよ…」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/09.html" class="prev">
+          09 - ことばダイエット
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/11.html">
+          11 - お前を元に戻す 1 つの方法
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/14.3de62dae.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>

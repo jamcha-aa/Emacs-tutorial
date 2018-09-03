@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>04 - Go! Go! Go! | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/8.cf3c8246.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>基本のキ</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/03.html" class="sidebar-link">03 - 偽装テキスト</a></li><li><a href="/Emacs-tutorial/article/04.html" class="active sidebar-link">04 - Go! Go! Go!</a></li><li><a href="/Emacs-tutorial/article/05.html" class="sidebar-link">05 - Move! Move! Move!</a></li><li><a href="/Emacs-tutorial/article/06.html" class="sidebar-link">06 - 賢馬は「引数」が読める</a></li><li><a href="/Emacs-tutorial/article/07.html" class="sidebar-link">07 - 広き世界へ</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>処理ーン☆</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>いつも覗かれている深淵，その縁</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_04-go-go-go"><a href="#_04-go-go-go" aria-hidden="true" class="header-anchor">#</a> 04 - Go! Go! Go!</h1> <pre><code>＊ここまでの要約
+================
+
+   ファイルを画面毎に見て行くには、次のコマンドを使います。
+
+   C-v     次の画面に進む
+   M-v     前の画面に戻る
+   C-l     画面を書き直す。このとき、カーソルのある行が画面の中央に
+     くるようにする。（C-1 じゃなくって C-L ですよ！）
+
+&gt;&gt; カーソルを見つけ、その近くにどんな文章が書かれているかを覚え、
+   それから C-l をタイプして下さい。
+   カーソルがどこに移動したか、その近くの文章はどうなったかを調べ
+   てみましょう。
+   もう一度 C-l をタイプして下さい。今見ていた文章は画面の上端に移
+   動します。
+   そして、もう一度 C-l をタイプして下さい。今度はその文章が画面の
+   下端に移動します。
+
+もしあなたのキーボードに PageUp や PageDn キーがあるなら、それらも画面
+を移動するのに使えます。でも、C-v や M-v を使う方が効率的です。
+</code></pre> <p>「&quot;&gt;&gt;&quot; の記号があるときは『やってみよう』の合図ね」「うむ」「ふつうは C-l を押すと『画面中央→上→下』にうつるんだけど，gnupack だと確か上下にうつるように設定されてます」</p> <blockquote><p>C-1 じゃなくって C-L ですよ！</p></blockquote> <p>「ふむ。ところでなぜいきなり前回の要約なんだ？そういうのは前回の最後にやるべきだと思うんだが」</p> <p>「ふっ」私は勝ち誇った顔をした。「君はコンピュータだからわからないと思うけど，人間は忘れやすいんだよ」「ほう」「新しいこと勉強する前に復習しないと忘れちゃうの。復習大事。わかる？」「わかったことにしておこう」「断じて前の分量が多いから持ち越したわけじゃないからね」「妙に言い訳がましく聞こえるが。まあいいだろう」</p> <p>「そうそう，要約って summary の訳なんだけどさ」「うむ」「中国語版見てたら，要約のこと小結 (小结) っていうんだって。面白いね」「…それ今必要なことか？」「面白いね」「おい，それは今必要な」「今納得してくれないとこれから事あるごとに summary は小結なんだって言うよ」「…」「それでもいい？」「…き，興味深いことだな。実に」「でしょ？」「…」</p> <br> <pre><code>＊カーソル移動の基本
+========================
+
+画面毎の移動はできるようになりました。今度は、画面の中で、特定の場所に
+移動するための方法を憶えましょう。
+</code></pre> <p>「ようやく移動か」EeePC が溜め息をつくように言う。「コントローラの準備はいい？」気合を入れる私。「コントローラ？」「オープニングムービー終わってこれから冒険がはじまるところだよ!」「…お，おう…」</p> <br> <pre><code>    これにはいくつかのやり方があります。矢印キーを使うこともできますが、手
+    をキーボード上の標準位置から大きく動かさずに、C-p、C-b、C-f、C-n を使
+    う方が効率的です。これらは４つの矢印キーと同じ働きをします。図で書けば、
+    次のようになります。
+</code></pre> <br> <p><img src="/Emacs-tutorial/assets/img/dcursor.d1711857.png" alt="diamond cursor"></p> <p>「意気揚々とのりこんだ結果がこれです」「おう」</p> <p>「これ初めて見たときに『うわぁ…めんどくせぇ…』って思わない人がいたらすごいと思う」「そうか」「私がいま見ても思うもん」「そんな慣れないものか？」「身体の動かし方を文章で説明されてる感じ。ふだん意識してないぶん忘れると全然できなくなる」「たとえば？」「声の出し方とか。ひどいめにあったショックで忘れちゃうの」</p> <p>「心配するな」「？」「それを助けるために私たちコンピュータがいる」「うん」「困ったときにはいつでも呼んでくれ。できるかぎり君を助けよう」「…ありがと」</p> <p>注: Emacs には<a href="http://git.savannah.gnu.org/cgit/emacs.git/tree/lisp/play/doctor.el" target="_blank" rel="noopener noreferrer">30 年以上のキャリア<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> (?) をもつ<a href="https://ja.wikipedia.org/wiki/ELIZA" target="_blank" rel="noopener noreferrer">ドクター<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>が常勤しています。 <code>M-x doctor</code> でいつでも呼び出せますが，ドクターは英語しか話せません。ご注意ください。</p> <br> <pre><code>&gt;&gt; C-n と C-p でカーソルを上図の真中の行に動かして下さい。それから C-l
+   をタイプして図の全体が画面中央にくるようにしてみましょう。
+
+これらのコマンドはそれぞれ、Previous, Next, Backward, Forward の頭文字
+になっているので、憶えやすいでしょう。これらは、カーソル移動の基本コマ
+ンドであり、頻繁に使うものです。
+
+&gt;&gt; C-n を何回かタイプし、この行までカーソルを移動させましょう。
+</code></pre> <p>「C-n C-p は私もすごく使う」「ふむ」「横書きの文章は画面が上下に進むから，最初は C-n と C-p に慣れておくといいと思う」「なるほどな」「でも私は矢印キーも使う。<a href="https://k-tai.watch.impress.co.jp/docs/column/stapa/730357.html" target="_blank" rel="noopener noreferrer">スタパ齋藤もカーソルキー使いまくる<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>」「おい，さっきリターンキー使わないのがかっこいいって言ったばかりだろう」「ポリシーがあればいいの。 <strong>矢印キーがついているから『あえて』 HHKB Pro じゃなくて Lite2 を買う</strong> とか， <a href="https://www.careertrek.com/daily/shukan-matz/" target="_blank" rel="noopener noreferrer"><strong>英字配列だとキーの数が足りないから JIS 配列のキーボードを英字配列にして使う</strong><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> とか」「…」</p> <br> <pre><code>&gt;&gt; C-f を使って行の中ほどに移動し、C-p で何行か上に移動させましょう。
+   カーソルの位置の変化に注意して下さい。
+
+各行の最後には（目には見えない）Newline 文字があります。これは次の行
+との区切りを示すためです。普通はファイルの最後の行にも Newline を付け
+るべきです（もっとも Emacs はそれを強制はしませんが）。
+</code></pre> <p>「Newline 文字はテキスト処理したことある人なら &quot;\n&quot; とか &quot;\r\n&quot; で知ってると思う」「ふむ」「Word を使ってる人には『行末にある曲がった矢印のようなもの』というと伝わることがある」「そうか」「君も昔は Word のお世話になっていたんだよ」「ずいぶん遠くなってしまったな」「うん」</p> <p>「そうそう，Git はファイルの末尾に改行入れないと警告が出るんだよ」「ふむ」「ここでも『付けるべきです』って書かれてるから，なんでそうなのか調べた」「なぜだ？」「<a href="https://stackoverflow.com/questions/729692/why-should-text-files-end-with-a-newline" target="_blank" rel="noopener noreferrer">POSIX のルール<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>で決まってるらしい」「POSIX」「UNIX の仕様を決めてるところ」「UNIX」「Windows 以外」「その定義は正確か？」「だって iOS は UNIX ベースだし，Android は Linux ベースだし，Linux は POSIX 準拠だし」「TRON があるだろう。FreeDOS や Haiku もある」「超漢字で<a href="https://ja.wikipedia.org/wiki/%E3%83%88%E3%83%B3%E3%83%91%E6%96%87%E5%AD%97" target="_blank" rel="noopener noreferrer">トンパ文字<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>触ってみたい」「うむ」</p> <blockquote><p><a href="http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap03.html#tag_03_206" target="_blank" rel="noopener noreferrer">3.206 Line<br>
+A sequence of zero or more non- &lt;newline&gt; characters plus a terminating &lt;newline&gt; character.<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p></blockquote> <br> <pre><code>&gt;&gt; 行の先頭で C-b をタイプしてみましょう。カーソルは前の行の末尾に移動
+   するはずです。これは C-b が前の Newline 文字を越えて戻ったからです。
+
+同様に C-f はカーソルを Newline 文字を越えて次に進めることができます。
+
+&gt;&gt; さらにもう少し C-b をタイプしてカーソル移動の感じを把んで下さい。
+   今度は C-f で行末まで進んで下さい。
+   さらにもう一度 C-f をタイプして次の行に進んで下さい。
+</code></pre> <p>「なんか世間話ばっかしてるから全然進まないね」「今どれくらいなんだ？」「まだ一割くらい」「おい」「気楽にいこうって行ったのは君でしょ？」「それはそうだが」「私が飽きたらただのコピペになるよ。それでもいいの？」「それは退屈だろうな」「でしょ？じゃあもっと応援してよ」「善処する」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/03.html" class="prev">
+          03 - 偽装テキスト
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/05.html">
+          05 - Move! Move! Move!
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/8.cf3c8246.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>

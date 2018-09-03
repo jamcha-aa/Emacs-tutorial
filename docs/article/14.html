@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>14 - コマゴマとしたコマンド | Emacsのチュートリアルをプレイ。</title>
+    <meta name="description" content="M-x help-with-tutorial">
+    <link rel="icon" type="image/png" href="/Emacs-tutorial/img/favicon.png">
+    
+    <link rel="preload" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css" as="style"><link rel="preload" href="/Emacs-tutorial/assets/js/app.5ede6f0d.js" as="script"><link rel="preload" href="/Emacs-tutorial/assets/js/18.e2b2dd2d.js" as="script"><link rel="prefetch" href="/Emacs-tutorial/assets/js/11.fef2d58e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/2.4d942548.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/3.3ce3b800.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/4.6501da9d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/5.0117c555.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/6.bd00796f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/7.8104d80b.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/8.cf3c8246.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/9.11089a1a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/10.a2b6c966.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/12.cf0caf3d.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/13.22ce69e1.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/14.3de62dae.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/15.07a5dc90.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/16.f7b66e35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/17.ceb38ece.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/19.a1aa2099.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/20.04d8ff35.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/21.9c632216.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/22.c21e20b2.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/23.be6b9f4a.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/24.ed21627f.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/25.3b35d3d8.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/26.c56953a4.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/27.fc97ae5e.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/28.de9b48c3.js"><link rel="prefetch" href="/Emacs-tutorial/assets/js/29.90cdd42e.js">
+    <link rel="stylesheet" href="/Emacs-tutorial/assets/css/0.styles.8f111511.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Emacs-tutorial/" class="home-link router-link-active"><!----> <span class="site-name">Emacsのチュートリアルをプレイ。</span></a> <div class="links" style="max-width:nullpx;"><!----> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/Emacs-tutorial/" class="nav-link">ホーム</a></div><div class="nav-item"><a href="https://jamcha-aa.github.io/About/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  作品一覧
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://github.com/jamcha-aa/Emacs-tutorial/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading"><span>プロローグ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>基本のキ</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>処理ーン☆</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading open"><span>いつも覗かれている深淵，その縁</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/Emacs-tutorial/article/12.html" class="sidebar-link">12 - アポクリファイル</a></li><li><a href="/Emacs-tutorial/article/13.html" class="sidebar-link">13 - 見るもの統べて</a></li><li><a href="/Emacs-tutorial/article/14.html" class="active sidebar-link">14 - コマゴマとしたコマンド</a></li></ul></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>ラストスパート</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>私の最高のアシスタント</span> <span class="arrow right"></span></p> <!----></div></li><li><div class="sidebar-group collapsable"><p class="sidebar-heading"><span>エピローグ</span> <span class="arrow right"></span></p> <!----></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="_14-コマゴマとしたコマンド"><a href="#_14-コマゴマとしたコマンド" aria-hidden="true" class="header-anchor">#</a> 14 - コマゴマとしたコマンド</h1> <p>「前々回ってコマンド 2 つしか紹介しなかったじゃん？」「ああ」「前回いくつかコマンド紹介したじゃん？」「そうだな」「私がふだん使ってるのって C-x b だけなんだ」「え」「チュートリアルが進むごとにどんどん展開が遅くなってるような気がして」「う…うむ」</p> <p>「出口が見えない沼を歩きつづけているような不安を感じる」「いま，全体のどれくらいなんだ？」「半分ちょっと…」</p> <p>「…」「…」「とりあえず先に進もう。足を踏み出さなければゴールにたどりつかない」</p> <p>「…ゴールってどこにあるんだろうね…」「…」「君，見える？」</p> <br> <p>「見える」「え？」「だって，スタート地点はもう見えないだろう？」「…うん」「私たちはそれだけ進んできたんだ。だからいずれゴールは見えてくる。間違いなく」</p> <br> <p>「Emacs のチュートリアルにこれだけ真面目に取り組んでるのってさ，私たちが初めてなんじゃないかな？」「ああ。ゴールまで走り抜ければ，間違いない」</p> <p>「…行こう。一緒に!」「ああ!」</p> <br> <pre><code>＊コマンドの拡張
+================
+
+Emacs には、コントロール文字やメタ文字に割当てられるよりもずっとずっと
+多くのコマンドがあります。これらを扱うために、拡張（eXtend）コマンドを
+使います。それには、以下の２つの種類があります。
+
+   C-x     文字による拡張。続けて一文字を入力します。
+   M-x     名前による拡張。続けてコマンドの名前を入力します。
+
+これらは、一般的には便利だけれども、これまで見てきたものほどは頻繁に用
+いられないコマンドです。C-x C-f（ファイルを開く）や C-x C-s（ファイル
+をセーブ）はこの仲間です。他に、C-x C-c（Emacs を終了）もそうです。C-x
+C-c に関しては、それまでに加えた変更が無くなるのを心配する必要はありま
+せん。Emacs を終了させる前に、変更された各ファイルをセーブするかどうか
+聞いてきますから。
+</code></pre> <p>「意気揚々と歩きだした私たちの前に表れたのは，これから様々なコマンドが襲いかかってくるであろう，そう予感させる記述であった」「…」「もはや満身創痍の私たちに生きのびる術は残されているのだろうか」「待て。まだそうと決まったわけじゃない。先に進もう」「そうして私を促す EeePC。だがその表情には不安が広がっている」「待て。勝手に判断するな」</p> <br> <pre><code>If you are using a graphical display, you don't need any special
+command to move from Emacs to another application.  You can do this
+with the mouse or with window manager commands.  However, if you're
+using a text terminal which can only show one application at a time,
+you need to &quot;suspend&quot; Emacs to move to any other application.
+</code></pre> <blockquote><p>もしグラフィカルディスプレイを使っているなら，Emacs から他のアプリケーションにうつるための特殊なコマンドは必要ありません。マウスやウインドウマネージャのコマンドを使いましょう。しかし，もしテキスト端末を使っていて一度にひとつのアプリケーションを表示できないのなら，他のアプリケーションにうつるために Emacs を「中断」させなければなりません。</p></blockquote> <br> <pre><code>C-z は「一時的に」Emacs を抜けるコマンドです。また同じ Emacs セッショ
+** C-z has been rebound, but you can use C-x C-z instead [More] **
+ンに戻ることができます。
+
+それができるシステム上なら、C-z は Emacs を「中断」させます。つまり
+Emacs を終了することなく、コマンドシェルに戻ることができます。大方の標
+準的なシェルなら、「fg」 コマンドもしくは 「%emacs」 によって Emacs を再開
+できます。
+
+「中断」機能を実装していないシステムでは、C-z は Emacs の下で走るサブ
+シェルを作り、他のプログラムを走らせてからまた Emacs に戻ることができ
+るようにします。この場合本当に Emacs から抜け出るわけではありませんの
+で、シェルコマンドの 「exit」 がそのサブシェルから Emacs に戻る普通のや
+り方です。
+</code></pre> <p>「あれ？私 C-z って何に割りあててたっけ…」「おい」「あ，<a href="https://ja.osdn.net/projects/gnupack/" target="_blank" rel="noopener noreferrer">gnupack<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>だと C-z はスクロールダウン (C-v) になってるんだ」「使わないのか？」「うん。C-z は，コントロールキーを Caps Lock に入れ替えてたり，小指の付け根で押してたりする人だと楽だと思う。けど私はコントロールキーを無変換に割り当ててるから」「じゃあ Caps Lock は何のキーにしてるんだ？まさかそのままなわけないだろう？」「<a href="https://github.com/jamcha-aa/xkb" target="_blank" rel="noopener noreferrer">skk の sticky shift キーにしてます<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>」「よくわからんが有効に使ってるんだな」「…」</p> <p>「ところで君はここで書かれている方法を使うのか？」「Emacs の中断？初めて見たかも」「おい」「もしくははるか昔に見て忘れたか」「困らないのか？」「シェルコマンドなら Emacs の中から起動するし，<a href="https://github.com/tmux/tmux/wiki" target="_blank" rel="noopener noreferrer">tmux<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>とか使えばターミナルの中でも画面分割できるし」「やらない理由ならいくらでも作れることを忘れるなよ」「ごめんなさい。C-x C-z で抜けて，fg で復帰ね」「そうだ。このチュートリアルはコメントするためではなくて，新しいことを学ぶためにあることを忘れるなよ」「わかりました先生!」</p> <br> <pre><code>C-x C-c はログアウトしようと思う時に使うものです。メールツール（mail
+コマンド等）やその他の様々なアプリケーションプログラムが起動した Emacs
+から抜け出る場合に使うのも正しいやり方です。これらのプログラムは Emacs
+の中断にどう対処して良いか知らないでしょうから。
+</code></pre> <p>「Emacs 使い始めた頃は何かあったら C-x C-c で終了してもいいかも」「ふむ」「とりあえずはじめは C-x C-c と C-g 覚えておけばなんとかなると思う」「ほう」「ファイルはドラッグアンドドロップで開くし」「チュートリアル的には感心しないが，まあ，いいだろう」</p> <br> <pre><code>C-x コマンドはたくさんあります。これまでに、以下を学びました。
+
+C-x C-f   ファイルを開く（Find）
+C-x C-s   ファイルのセーブ（Save）
+C-x C-b   バッファのリストアップ
+C-x C-c   Emacs を終了
+C-x 1     ウィンドウを１つにする（つまり他のウィンドウを全部消す）
+C-x u	  取り消し
+</code></pre> <p>「こんなにあったっけ？」「おい!」「あと C-x u は C-/の方が便利だよ!お忘れなく!」</p> <br> <pre><code>名前による拡張コマンドには、あまり使わないものや、特定のモードでしか使
+わないものがあります。たとえば replace-string ですが、これは文字列を置
+換するものです。M-x をタイプすると、Emacs は画面の最下行に M-x と表示
+し入力を促すので、そこにコマンドの名前（この場合 &quot;replace-string&quot;）を
+入れなければなりません。&quot;repl s&lt;TAB&gt;&quot; とだけタイプすると Emacs がコマ
+ンド名を補完してくれます。（&lt;TAB&gt; はタブキーです。普通は、キーボードの
+左端、CapsLock もしくは Shift キーの近くにあります。）コマンド名を入れ
+たら &lt;Return&gt; を打って下さい。
+
+&quot;Replace string&quot; コマンドには引数が二つ必要です。どの文字列をどう置換
+するかです。各引数を入力するたびに &lt;Return&gt; を打って下さい。
+
+&gt;&gt; カーソルをここから２行下の空行に移動させて下さい。
+   M-x repl s&lt;Return&gt;changed&lt;Return&gt;Altered&lt;Return&gt; とタイプしましょう。
+
+   この行がどう変わるか(changed)見ましょう。あなたはカーソル以降全部の
+   c-h-a-n-g-e-d という語を &quot;altered&quot; に変えたのです。
+</code></pre> <p>「先生!発言をしてもよろしいでしょうか!」「何かね。言ってみたまえ」「…それが君の思う『先生』なの？」「違うのか？」「悪いことした子供の頭を革靴でひっぱたいたりするでしょ」「靴は使わん。ぶ厚い辞書だ」「…」</p> <p>「話を戻そうか。何だ？」「今までコマンドの補完はタブでおこなってました。スペースキーでも補完してくれるなんて初めて知った」「今後は使うのか？」「慣れるかしばらく試してみる」</p> <p>「他には？」「Emacs ではタブキーの代わりに C-i を使う。<a href="https://github.com/k1LoW/emacs-drill-instructor/wiki" target="_blank" rel="noopener noreferrer">鬼軍曹.el<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>を入れると鍛えてくれる。でも私はタブキーを使います!」「おい!また矢印キーみたいな言い訳するのか」「<a href="https://github.com/ch11ng/exwm" target="_blank" rel="noopener noreferrer">exwm<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>でふつうのブラウザも使うから C-i が暴発すると困る」「うーむ…それならしょうがない，のか？」</p> <p>「あとひとつ」「？」「M-x replace-string の代わりに <strong>M-%</strong> が使える。置換はよく使うから覚えると便利」「ほう」</p> <p>「あ，もうひとつ!」「何だ」「物書きの人向けの機能なんだけど，C-SPC で範囲指定して <strong>M-=</strong> すると，一番下 (エコーエリア) に文字数が表示される」「ほう。これは君のためにあるような機能じゃないか」「これ知ってからずっと使ってる。すごく便利」</p> <p>「ふむ，ファイルサイズはともかく，文字数はプログラミングで必要な情報なのか？」「<a href="http://www.stallman.org/" target="_blank" rel="noopener noreferrer">この Emacs 作った人<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>は<a href="https://lists.gnu.org/archive/html/emacs-devel/2013-11/msg00515.html" target="_blank" rel="noopener noreferrer">Emacs にワープロ機能を持たせたい<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>って<a href="https://lists.gnu.org/archive/html/emacs-devel/2018-03/msg00089.html" target="_blank" rel="noopener noreferrer">ずっと言ってる<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>から，文章書くのに役立つ機能がついてるのかも」「この Emacs？」「<a href="http://finseth.com/emacs.html" target="_blank" rel="noopener noreferrer">Emacs はいろんな種類があるから<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>」</p> <br> <br> <p>(c) 2018 jamcha (jamcha.aa@gmail.com). (c) 1985, 1996, 1998, 2001-2018 Free Software Foundation, Inc.</p> <p><img src="https://www.gnu.org/graphics/gplv3-88x31.png" alt="GPL3"></p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/Emacs-tutorial/article/13.html" class="prev">
+          13 - 見るもの統べて
+        </a></span> <span class="next"><a href="/Emacs-tutorial/article/15.html">
+          15 - 癒しの泉
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/Emacs-tutorial/assets/js/18.e2b2dd2d.js" defer></script><script src="/Emacs-tutorial/assets/js/app.5ede6f0d.js" defer></script>
+  </body>
+</html>
